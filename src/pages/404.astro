@@ -2,11 +2,19 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
+<script>
+  import { Application } from '@splinetool/runtime';
+
+const canvas = document.querySelector('#canvas');
+const app = new Application(canvas);
+app.load('/404.splinecode');
+
+</script>
+
 <BaseLayout title = "404: Not Found" includeSidebar={false}>
-  <div class="text-center">
-    <h1 class="text-9xl font-bold mb-4">🏝</h1>
-    <h1 class="text-9xl font-bold mb-2">404</h1>
-    <h3 class="text-2xl">The page you're looking for couldn't be found.</h3>
-    <a class="btn btn-accent mt-9" href="/">Home</a>
+  <div class="text-center w-[480px] max-w-full overflow-hidden">
+    <canvas id="canvas" class="w-28 h-28 max-w-full" />
+    <h3 class="text-2xl">沒有找到這個頁面.....</h3>
+    <a class="btn btn-accent mt-9" href="/">回首頁</a>
   </div>
 </BaseLayout>
