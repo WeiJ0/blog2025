@@ -1,0 +1,88 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">關於我</div>
+  </div>
+
+  <div class="mb-10 text-justify leading-7">
+    一開始因為資訊管理系的背景接觸到網站開發，後來對於網頁的呈現有興趣，於是開始自學前端，並且喜歡參與前端相關社群吸收新知以及分享自己的心得。 <br />   
+    前端、軟體工作經驗為 4 年，目前於愛貝斯網路公司擔任前端工程師一職，負責公司對外專案極少數內部專案的建置。 <br />  <br />
+    前端可以使用 jQuery、Vue.js、React.js 等框架，後端可以使用 Node.js、ASP.NET C#、PHP 等語言，資料庫使用 Oracle MSSQL MySQL。 <br />
+  </div>
+
+  <!-- <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Title Name"
+      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+    />
+    <TimeLineElement
+      title="Title Name"
+      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+    />
+  </div> -->
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">工作經歷</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="義大開發股份有限公司"
+      subtitle="2019/08 ~ 2023/05 擔任軟體工程師一職"
+    >
+      <ul class="pl-5 pb-5 list-disc leading-7">
+        <li>主要維護及開發公司對外網站，前後台的開發及使用體驗的優化。</li>
+        <li>線上購物網站維護及功能開發，串接聯信金流。</li>
+        <li>公司 APP 開發及維護，使用 Cordova 建置雙平台行動應用程式。</li>
+        <li>簡易相關數據蒐集及建置報表供使用者瀏覽數據。</li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="愛貝斯網路有限公司"
+      subtitle="2023/06 至今 擔任前端工程師及研發部部門主管一職"
+    >
+    <ul class="pl-5 pb-5 list-disc leading-7">
+      <li>主要負責對外專案執行。</li>
+      <li>內部系統的優化及相關自動化開發。</li>      
+      <li>內部教育訓練相關工作。</li>
+      <li>管理 3 ~ 5 人專案追蹤及分配。</li>
+    </ul>
+    </TimeLineElement>
+  </div>
+
+  <!-- <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li>
+  </ul> -->
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">相關技能</div>
+  </div>
+
+  <div class="columns-3 mx-6 leading-8">
+    <li>CSS / SCSS</li>
+    <li>Bootstrap 5 / Tailwind CSS 3</li>    
+    <li>jQuery</li>
+    <li>Vue</li>
+    <li>React Hooks</li>
+    <li>PHP</li>
+    <li>ASP.NET C#</li>
+    <li>Node.js</li>
+  </div>
+</BaseLayout>
