@@ -11,6 +11,7 @@ export interface Props {
 }
 
 const { title, description, image = '/social_cover.png', ogType = 'website' } = Astro.props;
+const siteName = 'WJ開發筆記';
 ---
 
 <!-- Global Metadata -->
@@ -30,6 +31,7 @@ const { title, description, image = '/social_cover.png', ogType = 'website' } = 
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:site_name" content={siteName}>
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
