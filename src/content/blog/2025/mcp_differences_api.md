@@ -2,7 +2,7 @@
 title: "什麼是 MCP (Model Context Protocol)，與 API 的不同之處"
 description: "在每天都不斷演變的 AI 領域中，Model Context Protocol，簡稱 MCP 已經成為一股革命性的力量，改變人工智慧與資料來源互動的方式。將深入探討 MCP 是什麼、為何重要、如何運作、其在現實世界的影響。"
 pubDate: "March 11 2025"
-heroImage: "/post_img.webp"
+heroImage: "/blog/cover/mcp_differences_api.png"
 slug: "mcp_differences_api"
 ---
 
