@@ -48,6 +48,10 @@ MCP 的出現讓 AI 助理變得更成熟，幾乎不需要我們在一旁協助
 
 另一方面，它也逼著各家 AI 服務商推出更高品質的產品，才能留住萬中比較的用戶。就像 Graham 在影片裡試著修 bug 時說的，雖然現在還有些小問題，但 MCP 的潛力已經很明顯了。隨著它越來越成熟，我相信未來不久，這些大型語言模型（LLM）會在更多領域大放異彩。
 
+## 相關資料連結
 
+- Glama 提供的 MCP 清單 [Open-Source MCP servers](https://glama.ai/mcp/servers)
+
+- winsurf 使用 MCP 教學 [Windsurf发布官方 MCP使用视频，手摸手教你掌握AI2.0时代的重要工具!](https://www.youtube.com/watch?v=6xzAbxhLZmM)
 
 
