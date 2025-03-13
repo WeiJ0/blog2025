@@ -12,6 +12,8 @@ export interface Props {
 
 const { title, description, image = '/social_cover.png', ogType = 'website' } = Astro.props;
 const siteName = 'WJ開發筆記';
+
+const canonicalUrl = Astro.url.toString().endsWith('/') ? new URL(Astro.url.toString().slice(0, -1)) : Astro.url
 ---
 
 <!-- Global Metadata -->
@@ -39,6 +41,10 @@ const siteName = 'WJ開發筆記';
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Canonical URL -->
+
+<link rel="canonical" href={canonicalUrl} />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
